@@ -6,7 +6,7 @@ Systems and infrastructure professional building and operating a production-grad
 
 ## What I Run
 
-A two-node Proxmox cluster running VMs and LXC containers across segmented VLANs, managed through OPNsense, documented end-to-end, and monitored through Wazuh SIEM.
+A two-node Proxmox cluster running VMs and LXC containers across segmented VLANs, managed through OPNsense and documented end-to-end.
 
 | Layer | Stack |
 |---|---|
@@ -14,7 +14,7 @@ A two-node Proxmox cluster running VMs and LXC containers across segmented VLANs
 | Networking | OPNsense firewall, 5 VLANs, GS308EP managed switch, Suricata IDS |
 | Identity | Active Directory (WS2022 + WS2025 dual-DC) |
 | PKI | Enterprise Root CA (ADCS), wildcard *.homelab.local, 14 HTTPS services |
-| Monitoring | Wazuh SIEM, OPNsense syslog + Suricata alerts, agent-based endpoint monitoring |
+| Monitoring | Suricata IDS on OPNsense, GLPI Agent asset inventory across the fleet |
 | Automation | Ansible, SSH pipelining, async patching (23 min to 2 min) |
 | DNS | AdGuard Home, conditional forwarding to AD DNS, custom rewrites |
 | Access | Nginx Proxy Manager, Tailscale subnet routing, GitHub remote |
@@ -32,13 +32,13 @@ A two-node Proxmox cluster running VMs and LXC containers across segmented VLANs
 | homelab-runbooks | Operational runbooks — incident response, build guides, patching procedures |
 | homelab-network-documentation | VLAN design, OPNsense config, switch assignments, network diagrams |
 | active-directory-lab | AD OU design, GPOs, PKI/ADCS, dual-DC deployment, PowerShell provisioning |
-| wazuh-siem-deployment | Wazuh deployment, agent config, dashboards, OPNsense log pipeline |
 | homelab-portfolio | Full architecture overview and infrastructure documentation landing page |
+| glpi-itsm-deployment | GLPI ITSM platform, LDAP integration, intake forms, asset discovery |
 
 ---
 
 ## Skills
-Linux, Windows Server, Active Directory, Proxmox VE, OPNsense, Ansible, Bash, PowerShell, Docker, Wazuh, PKI / ADCS, VLANs, DNS, Suricata, Git, ITIL
+Linux, Windows Server, Active Directory, Proxmox VE, OPNsense, Ansible, Bash, PowerShell, Docker, PKI / ADCS, VLANs, DNS, Suricata, Git, ITIL
 
 ---
 
